@@ -1,0 +1,16 @@
+{
+  "name": "simple-block",
+  "main": "build/index.js",
+  "repository": "git@github.com:chwnam/simple-block.git",
+  "devDependencies": {
+    "@wordpress/blocks": "^6.25.0",
+    "@wordpress/i18n": "^3.17.0",
+    "@wordpress/scripts": "^12.6.0"
+  },
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "make-pot": "wp i18n make-pot . languages/simple-block.pot --domain=simple-block",
+    "make-json": " wp i18n make-json ./languages --no-purge"
+  }
+}
