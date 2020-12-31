@@ -30,7 +30,7 @@ function simple_block_register_script() {
 add_action( 'init', 'simple_block_register_script' );
 
 
-function simple_block_enqueue_script() {
+function simple_block_set_script_translation() {
 	if ( function_exists( 'wp_set_script_translations' ) ) {
 		wp_set_script_translations(
 			'simple-block',
@@ -40,4 +40,4 @@ function simple_block_enqueue_script() {
 	}
 }
 
-add_action( 'enqueue_block_editor_assets', 'simple_block_enqueue_script' );
+add_action( 'enqueue_block_editor_assets', 'simple_block_set_script_translation' );
